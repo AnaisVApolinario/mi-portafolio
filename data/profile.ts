@@ -1,5 +1,3 @@
-import { Linkedin } from 'lucide-react';
-// Datos personales y de contacto. Edita aquí y el sitio se actualiza solo.
 
 export const profile = {
   name: "Anais Valverde",
