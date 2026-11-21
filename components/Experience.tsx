@@ -1,30 +1,80 @@
-import { experience } from "../data/experience";
-import { Briefcase } from "lucide-react";
+import { experience } from "@/data/experience";
+import { education } from "@/data/profile";
+import SectionTitle from "./SectionTitle";
+
 export default function Experience() {
   return (
-    <section className="bg-slate-900 text-white px-10 py-20" id="experience">
-      <div className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold mb-16 flex items-center gap-3">
-          <Briefcase className="text-blue-500" size={32} />
-          Experiencia
-        </h2>
+    <section id="experience" className="border-t border-line">
+      <div className="mx-auto max-w-5xl px-5 py-24">
+        <SectionTitle
+          route="/experiencia"
+          title="Experiencia"
+          subtitle="Proyectos reales, equipos ágiles y entregas iterativas."
+        />
 
-        <div className="relative border-l border-slate-700 ml-4">
-          {experience.map((item, index) => (
-            <div key={index} className="mb-12 ml-6">
-              <span className="absolute -left-3 w-6 h-6 bg-blue-500 rounded-full border-4 border-slate-900"></span>
+        <ol className="space-y-12">
+          {experience.map((item) => (
+            <li
+              key={`${item.company}-${item.period}`}
+              className="grid gap-4 md:grid-cols-[180px_1fr] md:gap-10"
+            >
+              <p className="font-mono text-sm text-muted md:pt-1">
+                {item.period}
+              </p>
 
-              <h3 className="text-2xl font-semibold text-blue-400">
-                {item.role}
-              </h3>
+              <div>
+                <h3 className="text-xl font-semibold">
+                  {item.role}{" "}
+                  <span className="italic text-accent">· {item.company}</span>
+                </h3>
 
-              <p className="text-lg font-medium">{item.company}</p>
+                <ul className="mt-3 space-y-2 text-fg/85">
+                  {item.points.map((point) => (
+                    <li key={point} className="flex gap-3 leading-relaxed">
+                      <span
+                        className="mt-[0.7em] h-1 w-1 shrink-0 rounded-full bg-accent"
+                        aria-hidden="true"
+                      />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
 
-              <p className="text-sm text-slate-400 mb-3">{item.date}</p>
-
-              <p className="text-slate-300 max-w-2xl">{item.description}</p>
-            </div>
+                <ul
+                  className="mt-4 flex flex-wrap gap-2"
+                  aria-label="Tecnologías usadas"
+                >
+                  {item.stack.map((tech) => (
+                    <li
+                      key={tech}
+                      className="rounded border border-line px-2 py-0.5 font-mono text-xs text-muted"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
           ))}
+        </ol>
+
+        <div className="mt-20 border-t border-line pt-12">
+          <SectionTitle
+            route="/educacion"
+            title="Educación"
+          />
+          <ul className="grid gap-6 md:grid-cols-3">
+            {education.map((item) => (
+              <li
+                key={item.school}
+                className="rounded-lg border border-line bg-soft p-5"
+              >
+                <p className="font-mono text-xs text-muted">{item.period}</p>
+                <p className="mt-2 text-lg font-semibold">{item.school}</p>
+                <p className="mt-1 text-sm italic text-muted">{item.program}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
