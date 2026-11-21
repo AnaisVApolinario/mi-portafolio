@@ -9,7 +9,7 @@ Todo el contenido vive en `data/`, no hace falta tocar los componentes:
 
 - `data/profile.ts` – datos personales, LinkedIn, educación y stack.
 - `data/experience.ts` – experiencia laboral.
-- `data/projects.ts` – proyectos (hay un ejemplo comentado listo para copiar).
+- `data/projects.ts` – proyectos.
 
 ## Correr en local
 
