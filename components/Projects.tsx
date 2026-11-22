@@ -1,6 +1,14 @@
+import Link from "next/link";
 import { projects } from "@/data/projects";
-import { BookOpen, ExternalLink, Github, PlayCircle } from "lucide-react";
+import {
+  ArrowRight,
+  BookOpen,
+  ExternalLink,
+  Github,
+  PlayCircle,
+} from "lucide-react";
 import SectionTitle from "./SectionTitle";
+
 
 const linkClass =
   "inline-flex items-center gap-2 rounded border border-line px-3 py-1.5 font-mono text-xs transition-colors hover:border-accent hover:text-accent";
