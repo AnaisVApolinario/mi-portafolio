@@ -53,4 +53,58 @@ export const projects: Project[] = [
     videoUrl: "https://github-production-user-asset-6210df.s3.amazonaws.com/105659228/710023709-84811a01-5689-4d94-8e4a-186646721403.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20261122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261122T132234Z&X-Amz-Expires=300&X-Amz-Signature=c37b009e3417bde0d151c3fffc8fcb703185483f493481b335a117777698cc1a&X-Amz-SignedHeaders=host&response-content-type=video%2Fmp4",
     image: "/proyectos/terranova.png",
   },
+  {
+    slug: "sistema-ventas",
+    title: "Sistema de Gestión de Ventas",
+    description:
+      "Aplicación web para el control de ventas, inventario y usuarios, con autenticación segura mediante JWT y gestión de roles.",
+    stack: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL"], // Ajusta la BD o frontend si tiene
+    about:
+      "Sistema diseñado para administrar el flujo comercial de un negocio: registro de productos, control de stock, emisión de ventas y administración de accesos según el perfil del usuario.",
+    highlights: [
+      "Autenticación y autorización stateless con JWT y Spring Security.",
+      "Gestión de roles y permisos para controlar el acceso a los módulos.",
+      "Operaciones CRUD completas para productos, clientes y registro de ventas.",
+      "Persistencia de datos relacionales y consultas estructuradas en base de datos.",
+    ],
+    repoUrl: "https://github.com/AnaisVApolinario/fullstack-ventas",
+    videoUrl: "https://github.com/user-attachments/assets/afe1e515-fc01-496a-8a52-97603706b787", 
+    image: "/proyectos/sistema-ventas.png",
+  },
+   {
+    slug: "social-network",
+    title: "Patitas Preciosas",
+    description:
+      "Aplicación web para el control de ventas, inventario y usuarios, con autenticación segura mediante JWT y gestión de roles.",
+    stack: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL"], // Ajusta la BD o frontend si tiene
+    about:
+      "Sistema diseñado para administrar el flujo comercial de un negocio: registro de productos, control de stock, emisión de ventas y administración de accesos según el perfil del usuario.",
+    highlights: [
+      "Autenticación y autorización stateless con JWT y Spring Security.",
+      "Gestión de roles y permisos para controlar el acceso a los módulos.",
+      "Operaciones CRUD completas para productos, clientes y registro de ventas.",
+      "Persistencia de datos relacionales y consultas estructuradas en base de datos.",
+    ],
+    repoUrl: "https://github.com/AnaisVApolinario/LIM018-social-network",
+    demoUrl: "https://anaisvapolinario.github.io/",
+    image: "/proyectos/sistema-ventas.png",
+  },
+   {
+    slug: "tienda_virtual",
+    title: "TAM-MINIMARKET",
+    description:
+      "Aplicación web para el control de ventas, inventario y usuarios, con autenticación segura mediante JWT y gestión de roles.",
+    stack: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL"], // Ajusta la BD o frontend si tiene
+    about:
+      "Sistema diseñado para administrar el flujo comercial de un negocio: registro de productos, control de stock, emisión de ventas y administración de accesos según el perfil del usuario.",
+    highlights: [
+      "Autenticación y autorización stateless con JWT y Spring Security.",
+      "Gestión de roles y permisos para controlar el acceso a los módulos.",
+      "Operaciones CRUD completas para productos, clientes y registro de ventas.",
+      "Persistencia de datos relacionales y consultas estructuradas en base de datos.",
+    ],
+    repoUrl: "https://github.com/AnaisVApolinario/FRONTEND-REACT-MINIMARKET",
+    demoUrl: "https://anaisvapolinario.github.io/",   
+    image: "/proyectos/sistema-ventas.png"
+  },
 ];

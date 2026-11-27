@@ -30,11 +30,8 @@ export default function Hero() {
           </p>
 
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-fg/90">
-            Desarrollo APIs y servicios backend con Java y Spring Boot,
-            trabajando con bases de datos y creando soluciones escalables.
-            También cuento con experiencia en frontend, lo que me permite 
-            integrar el backend con interfaces web claras y funcionales.
-            Estoy buscando mi próxima oportunidad en backend para seguir creciendo.
+            Desarrollo aplicaciones web, servicios backend y gestiono bases de datos creando soluciones funcionales y escalables. Aunque tengo un fuerte enfoque en Java y Spring Boot, me adapto fácilmente a distintas tecnologías según el proyecto. Busco mi próxima oportunidad como Software Developer para seguir aportando y creciendo profesionalmente.
+
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 font-mono text-sm">

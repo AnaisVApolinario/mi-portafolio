@@ -1,10 +1,10 @@
 
 export const profile = {
   name: "Anais Valverde",
-  role: "Full Stack Developer",
-  focus: "Backend · Java / Spring Boot",
+  role: "Software Developer",
+  focus: "Backend / Java · Frontend / JavaScript",
   location: "Lima, Perú",
-  availability: "Disponible · busco oportunidades en backend",
+  availability: "Disponible · abierta a nuevos retos en desarrollo",
   email: "valverdeanais31@gmail.com",
   github: "https://github.com/AnaisVApolinario",
   linkedin: "https://www.linkedin.com/in/anais-valverde-06aa27248/",
